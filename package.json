@@ -1,0 +1,34 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "chapa",
+  "title": "Chapa",
+  "description": "Busca en lo que has dictado con Chapa y cópialo o pégalo.",
+  "icon": "icon.png",
+  "author": "proxus",
+  "categories": ["Productivity"],
+  "license": "MIT",
+  "platforms": ["macOS"],
+  "commands": [
+    {
+      "name": "historial",
+      "title": "Historial de dictados",
+      "subtitle": "Chapa",
+      "description": "Lo que has dictado, con búsqueda. Intro lo copia; ⌘ Intro lo pega en la app de delante.",
+      "mode": "view",
+      "keywords": ["dictado", "chapa", "historial", "voz"]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "2.10.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/react": "19.3.0",
+    "typescript": "5.8.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist -o dist",
+    "dev": "ray develop",
+    "typecheck": "tsc --noEmit"
+  }
+}
